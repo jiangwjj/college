@@ -10,6 +10,7 @@ import com.jwj.service.CourseService;
 import com.jwj.vo.Course;
 import com.opensymphony.xwork2.ActionSupport;
 
+//修改 java 代码，测试 提交
 public class CourseAction extends ActionSupport {
 
 	/**
@@ -36,6 +37,7 @@ public class CourseAction extends ActionSupport {
 	// 添加课程
 	public String addCourse() {
 		if (cs.findCourse(courseid) == null) {
+       
 			c.setCourseid(courseid);
 			c.setCoursename(coursename);
 			cs.addCourse(c);
