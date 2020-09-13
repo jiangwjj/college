@@ -10,7 +10,7 @@ import com.jwj.service.CourseService;
 import com.jwj.vo.Course;
 import com.opensymphony.xwork2.ActionSupport;
 
-//修改 java 代码，测试 提交
+//修改 java 代码，测试 提交dfs
 public class CourseAction extends ActionSupport {
 
 	/**
@@ -22,6 +22,7 @@ public class CourseAction extends ActionSupport {
 	private String coursename;
 	private String forwardview;
 	private String Msg;
+private String Msg;
 	Course course=new Course();
 
 
