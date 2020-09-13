@@ -10,7 +10,7 @@ import com.jwj.service.CourseService;
 import com.jwj.vo.Course;
 import com.opensymphony.xwork2.ActionSupport;
 
-//修改 java 代码，测试 提交
+//修改 java 代码，测试 提交 1111
 public class CourseAction extends ActionSupport {
 
 	/**
