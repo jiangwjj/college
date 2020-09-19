@@ -10,7 +10,11 @@ import com.jwj.service.CourseService;
 import com.jwj.vo.Course;
 import com.opensymgfgfdphony.xwork2.ActionSupport;
 
+<<<<<<< HEAD
 //ä¿®æ”¹ java ä»£ç ï¼Œæµ‹è¯• æäº¤ 1111 ä»»åŠ¡
+=======
+//ÐÞ¸Ä java ´úÂë£¬²âÊÔ Ìá½»dfs
+>>>>>>> a45a03480c880e8f9caa53646e8a2cdce4a2076a
 public class CourseAction extends ActionSupport {
 
 	/**
@@ -22,6 +26,7 @@ public class CourseAction extends ActionSupport {
 	private String coursename;
 	private String forwardview;
 	private String Msg;
+private String Msg;
 	Course course=new Course();
                private String Msg;
 
