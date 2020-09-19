@@ -31,6 +31,20 @@ public class CourseAction extends ActionSupport {
 		// TODO Auto-generated method stub
 		return super.execute();
 	}
+	
+	// 添加课程
+	public String addCourse() {
+		if (cs.findCourse(courseid) == null) {
+       
+			c.setCourseid(courseid);
+			c.setCoursename(coursename);
+			cs.addCourse(c);
+			List<Course> list = null;
+			HttpServletRequest request = ServletActionContext.getRequest();
+			forwardview = "/CourseManager.jsp";
+			list = cs.findCourseAll();
+			request.setAttribute("list", list);
+			
 
 	Course c = new Course();
 	CourseService cs = new CourseService();
@@ -47,7 +61,15 @@ public class CourseAction extends ActionSupport {
 			forwardview = "/CourseManager.jsp";
 			list = cs.findCourseAll();
 			request.setAttribute("list", list);
-			list  fdsfa fdsi
+			
+			
+			
+			@Override
+	public String execute() throws Exception {
+		// TODO Auto-generated method stub
+		return super.execute();
+		// list  fdsfa fdsi
+	}
 		  //ceshi ef
 			return SUCCESS;
 		} else {
