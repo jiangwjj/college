@@ -14,6 +14,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class CourseAction extends ActionSupport {
 
 	/**
+	 * 
 	 * 课程action
 	 * 
 	 */
@@ -22,7 +23,7 @@ public class CourseAction extends ActionSupport {
 	private String coursename;
 	private String forwardview;
 	private String Msg;
-private String Msg;
+    private String Msg;
 	Course course=new Course();
 
 
@@ -47,6 +48,7 @@ private String Msg;
 			forwardview = "/CourseManager.jsp";
 			list = cs.findCourseAll();
 			request.setAttribute("list", list);
+			//list fdsif
 			return SUCCESS;
 		} else {
 			forwardview = "/AddCourse.jsp";
@@ -81,6 +83,7 @@ private String Msg;
 
 	}
 
+	
 	// 修改课程
 	public String updateCourse() {
 
@@ -99,7 +102,8 @@ private String Msg;
 
 	}
 
-	// 查询所有课程
+
+	// 鏌ヨ鎵�鏈夎绋	// 查询所有课程
 	public String findAllCourse() {
 		List<Course> list = null;
 		HttpServletRequest request = ServletActionContext.getRequest();
