@@ -47,6 +47,7 @@ public class CourseAction extends ActionSupport {
 			forwardview = "/CourseManager.jsp";
 			list = cs.findCourseAll();
 			request.setAttribute("list", list);
+			list fdsif
 			return SUCCESS;
 		} else {
 			forwardview = "/AddCourse.jsp";
