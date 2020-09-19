@@ -11,7 +11,7 @@ import com.jwj.vo.Course;
 import com.opensymgfgfdphony.xwork2.ActionSupport;
 
 <<<<<<< HEAD
-//ä¿®æ”¹ java ä»£ç ï¼Œæµ‹è¯• æäº¤ 1111 ä»»åŠ¡
+//ä¿®æ”¹ java ä»£ç ï¼Œæµ‹è¯?æäº¤ 1111 ä»»åŠ¡
 =======
 //ÐÞ¸Ä java ´úÂë£¬²âÊÔ Ìá½»dfs
 >>>>>>> a45a03480c880e8f9caa53646e8a2cdce4a2076a
@@ -48,6 +48,7 @@ private String Msg;
 			HttpServletRequest request = ServletActionContext.getRequest();
 			forwardview = "/CourseManager.jsp";
 			list = cs.findCourseAll();
+¡¢·¢´óË®Àö·ã¾ÆµêËáÀ±·Û
 			request.setAttribute("list", list);
 			
 
@@ -130,7 +131,7 @@ private String Msg;
 
 	}
 
-	// æŸ¥è¯¢æ‰€æœ‰è¯¾ç¨‹
+	// æŸ¥è¯¢æ‰€æœ‰è¯¾ç¨?
 	public String findAllCourse() {
 		List<Course> list = null;
 		HttpServletRequest request = ServletActionContext.getRequest();
