@@ -10,11 +10,11 @@ import com.jwj.service.CourseService;
 import com.jwj.vo.Course;
 import com.opensymgfgfdphony.xwork2.ActionSupport;
 
-//ĞŞ¸Ä java ´úÂë£¬²âÊÔ Ìá½» 1111 ÈÎÎñ
+//ä¿®æ”¹ java ä»£ç ï¼Œæµ‹è¯• æäº¤ 1111 ä»»åŠ¡
 public class CourseAction extends ActionSupport {
 
 	/**
-	 * ¿Î³Ìaction
+	 * è¯¾ç¨‹action
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
@@ -35,7 +35,7 @@ public class CourseAction extends ActionSupport {
 	Course c = new Course();
 	CourseService cs = new CourseService();
 
-	// Ìí¼Ó¿Î³Ì
+	// æ·»åŠ è¯¾ç¨‹
 	public String addCourse() {
 		if (cs.findCourse(courseid) == null) {
        
@@ -47,16 +47,17 @@ public class CourseAction extends ActionSupport {
 			forwardview = "/CourseManager.jsp";
 			list = cs.findCourseAll();
 			request.setAttribute("list", list);
-			list fdsif
+			list  fdsfa fdsi
+		  //ceshi ef
 			return SUCCESS;
 		} else {
 			forwardview = "/AddCourse.jsp";
-			Msg = "¿Î³ÌidÒÑ¾­´æÔÚ";
+			Msg = "è¯¾ç¨‹idå·²ç»å­˜åœ¨";
 			return INPUT;
 		}
 	}
 
-	// É¾³ı¿Î³Ì
+	// åˆ é™¤è¯¾ç¨‹
 	public String delCourse() {
 		List<Course> list = null;
 		HttpServletRequest request = ServletActionContext.getRequest();
@@ -69,11 +70,13 @@ public class CourseAction extends ActionSupport {
 
 	}
 
-	// ¸ù¾İid²éÑ¯¿Î³Ì
+	// æ ¹æ®idæŸ¥è¯¢è¯¾ç¨‹
 	public String findCourseById() {
 
 		cs.findCourse(courseid);
 
+		
+		
 		HttpServletRequest request = ServletActionContext.getRequest();
 		request.setAttribute("course", cs.findCourse(courseid));
 		forwardview = "/CourseUpdate.jsp";
@@ -82,7 +85,7 @@ public class CourseAction extends ActionSupport {
 
 	}
 
-	// ĞŞ¸Ä¿Î³Ì
+	// ä¿®æ”¹è¯¾ç¨‹
 	public String updateCourse() {
 
 	
@@ -100,7 +103,7 @@ public class CourseAction extends ActionSupport {
 
 	}
 
-	// ²éÑ¯ËùÓĞ¿Î³Ì
+	// æŸ¥è¯¢æ‰€æœ‰è¯¾ç¨‹
 	public String findAllCourse() {
 		List<Course> list = null;
 		HttpServletRequest request = ServletActionContext.getRequest();
