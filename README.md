@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# college 测试测试11234
+# college 测试测试bug11234
 个
 =======
 # college  remote
